@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="img/hon.jpg">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+<body>
+    <div id="main">
+
+        <header id="head">
+            <a href="https://www.amazon.co.jp/s?bbn=466306&rh=n%3A466306&field-age_range=2269404051&ref=fst_h1_st_4" id="h">読書リスト</a>
+        </header>
+
+
+        <form method="post" enctype="multipart/form-data">
+
+
+            <div id="flex_outer">
+                <div id="dragDropArea">
+                    <div class="drag-drop-inside">
+                        <p class="drag-drop-info">ここに写真を入れる</p>
+                        <p>または</p>
+                        <p class="drag-drop-buttons">
+                            <input id="fileInput" type="file" accept="image/*" value="写真を選ぶ" name="photo" onChange="photoPreview(event)">
+                        </p>
+                        <div id="previewArea"></div>
+                    </div>
+                </div>
+
+                <a href=""></a>
+
+                    <div id="flex_inner">
+                        <p class="p">本の題名</p>
+                        <input type="text" id="title">
+                        <p >読み終わった日</p>
+                        <input type="date" id="date">
+                        <p>感想</p>
+                        <textarea id="memo"></textarea>
+                        <div class="flex_bt">
+                            <button type="button" name="button" value="save" id="save">保存</button>
+                            <button type="button" id="clear" class="clear">削除</button>
+                        </div>
+                    </div>
+            </div>
+
+            
+
+            
+        </form>
+        
+        <div id="list">読んだ本</div>
+
+        <!-- <div id="clear_b">
+            
+        </div> -->
+        
+            <ul id="listsyousai">
+            <!-- ここに追加データが挿入される -->
+           
+
+
+            </ul>
+
+
+        
+    
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    
+</body>
+</html>
